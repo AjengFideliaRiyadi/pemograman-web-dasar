@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Form</title>
+</head>
+<body>
+    
+        <table border="1" align="center" cellpadding="10" cellspacing="0"> 
+            <thead>
+                  <th colspan="3">
+                    Form Input Mahasiswa
+                    
+                  </th>
+            </thead>
+
+            <tbody>
+              
+                <form method="post" enctype="multipart/form-data">
+                    <tr>
+                        <td>Nim</td>
+                        <td>:</td>
+                        <td><input type="Number" name="Nim" id="Nim"required></td>
+                    </tr>
+                    <tr>
+                        <td>Nama</td>
+                        <td>:</td>
+                        <td><input type="text" name="Nama"  id="Nama"required ></td>
+                    </tr>
+                    <tr>
+                        <td>Jenis Kelamin</td>
+                        <td>:</td>
+                        <td>
+                            <input required type="radio" name="jk"   id="jk" value="laki-Laki"> Laki-Laki
+                            <input required type="radio" name="jk"   id="jk" value="Perempuan"> Perempuan
+                        </td>
+                    </tr>
+                        <tr>
+                            <td>Program Studi</td>
+                            <td>:</td>
+                            <td>
+                                <select required name="prodi"    id="prodi">
+                                <option required value="" Selected disabled>Pilih Program Studi</option>
+                                <option required value="Teknk Informatika">Teknik Informatika</option>
+                                <option required value="Sistem Informasi">Sistem Informasi</option>
+                                <option required value="Teknik Komputer">Teknik Komputer</option>
+
+                                </select>
+                            </td>
+                        </tr>
+                        <td colspan="3" align="center">
+                            <input required type="submit" name="submit"  value="Simpan">
+                            <input required type="reset"  name="reset"   value="reset">   
+                        </td>
+                </form>
+            </tbody>
+        </table>
+</body>
+</html>
